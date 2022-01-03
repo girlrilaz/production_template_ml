@@ -1,0 +1,7 @@
+[MASTER]
+
+disable=missing-function-docstring,missing-function-docstring,unused-argument
+
+[MESSAGES CONTROL]
+
+disable=C0103
