@@ -4,7 +4,7 @@ with open('README.md', encoding = 'utf-8') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name = 'myml_nr_number_three',
+    name = 'model_1',
     version = '0.0.1',
     description = 'Machine Learning production code skeleton',
     long_description = long_description,
