@@ -8,7 +8,7 @@ from sklearn.utils.validation import check_is_fitted
 from .features import PreprocessFeatures
 
 
-class TitanicModel(BaseEstimator):
+class RandomForestModel(BaseEstimator):
     """
     A RandomForest-based classifier that predicts survival on the Titanic.
 

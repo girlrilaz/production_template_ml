@@ -15,11 +15,11 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": "https://github.com/girlrilaz/production_template_ml/issues",
     },
-    # classifiers=[
-    #     "Programming Language :: Python :: 3",
-    #     "License :: OSI Approved :: GNU License",
-    #     "Operating System :: OS Independent",
-    # ],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+    ],
     package_dir={"": "src"},
     packages=setuptools.find_packages("src"),
     python_requires = '>=3.8, <4',
@@ -31,4 +31,5 @@ setuptools.setup(
                     ],
     extras_require = {'dev': ["pep517", "pytest", "pylint", "black", "pre-commit"], 
     }, 
+    entry_points={"console_scripts": ["RandomForest=RandomForest.cli:cli"]},
 )
