@@ -5,7 +5,7 @@ import pandas as pd
 import pytest
 from sklearn.exceptions import NotFittedError
 
-from RandomForest.features import PreprocessFeatures
+from RandomForest_Flask.features import PreprocessFeatures
 
 # Example showing how to use external files in fixtures:
 

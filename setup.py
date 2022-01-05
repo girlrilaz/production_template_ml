@@ -3,8 +3,10 @@ import setuptools
 with open('README.md', encoding = 'utf-8') as f:
     long_description = f.read()
 
+package_nam_var = 'RandomForest_Flask'
+
 setuptools.setup(
-    name = 'RandomForest',
+    name = package_nam_var,
     version = '0.0.1',
     description = 'Machine Learning production code skeleton',
     long_description = long_description,
@@ -31,5 +33,5 @@ setuptools.setup(
                     ],
     extras_require = {'dev': ["pep517", "pytest", "pylint", "black", "pre-commit"], 
     }, 
-    entry_points={"console_scripts": ["RandomForest=RandomForest.cli:cli"]},
+    entry_points={"console_scripts": [package_nam_var + "=" + package_nam_var + ".cli:cli"]},
 )
